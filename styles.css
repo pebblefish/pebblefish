@@ -1,0 +1,15 @@
+@font-face
+{
+  font-family: Aaargh;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body
+{
+  font-family: Aaargh;
+  background-image: url('pebblefish.png');
+  background-size: 150%;
+  padding-top: 20%;
+  padding-left: 30%;
+}
