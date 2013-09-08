@@ -30,6 +30,11 @@ p
   padding-right: 32%;
 }
 
+a
+{
+  color: #80CFD7;
+}
+
 h1
 {
   font-family: Neocyr;
@@ -38,7 +43,7 @@ h1
 
 h2
 {
-  color: #F6F8F9;
+  color: #BE7A52;
   font-family: Neocyr;
   font-style: normal;
   font-weight: normal;
