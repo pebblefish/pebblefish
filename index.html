@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pebblefish</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/benveno" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/neocyr" rel="stylesheet" type="text/css/"/>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <script type="application/javascript">
+      function draw() {
+        var canvas = document.getElementById("canvas");
+        if (canvas.getContext) {
+          var ctx = canvas.getContext("2d");
+          
+          // Quadratric curves example
+          ctx.beginPath();
+          ctx.moveTo(0,200);
+          ctx.bezierCurveTo(100,167,300,225,400,200);
+          ctx.bezierCurveTo(450,175,700,200,800,200);
+          ctx.bezierCurveTo(900,200,1100,202,1200,200);
+          ctx.stroke();
+          
+          ctx.beginPath();
+          ctx.moveTo(0,210);
+          ctx.bezierCurveTo(100,167,300,225,400,230);
+          ctx.bezierCurveTo(450,175,700,200,800,210);
+          ctx.bezierCurveTo(900,200,1100,202,1200,190);
+          ctx.stroke();
+        }
+      }
+    </script>
+  </head>
+
+  <body onload="draw();">
+    <img src="images/icon_alpha.png" height="150px" style="float:left;padding-left:30%;padding-right:40px;vertical-align:text-bottom;"/>
+    <h1>Pebblefish</h1>
+    <canvas id="canvas" width="1400" height="300"/>
+  </body>
+</html>
